@@ -1,0 +1,9 @@
+[install]
+if [[ ! -e ~/.anyenv ]]; then
+  git clone https://github.com/riywo/anyenv ~/.anyenv
+elif [[ $RENO_UPGRADE ]]; then
+  git -C ~/.anyenv pull
+fi
+
+[uninstall]
+rm -rf ~/.anyenv

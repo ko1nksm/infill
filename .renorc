@@ -1,0 +1,4 @@
+case $(uname -a) in
+  *Cygwin*) INFILL_DEFAULT=cygwin ;;
+  *Msys*)   INFILL_DEFAULT=cygwin ;;
+esac

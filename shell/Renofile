@@ -1,0 +1,6 @@
+[install]
+if type zsh > /dev/null 2>&1; then
+  [ $SHELL = "/bin/zsh" ] || chsh -s /bin/zsh
+elif type bash > /dev/null 2>&1; then
+  [ $SHELL = "/bin/bash" ] || chsh -s /bin/bash
+fi

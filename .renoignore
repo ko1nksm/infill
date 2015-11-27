@@ -1,0 +1,8 @@
+id_rsa
+
+*~
+*.bak
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+.DS_Store
+Thumbs.db

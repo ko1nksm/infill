@@ -1,0 +1,6 @@
+# Do not recommend the management of secret files.
+id_rsa
+id_dsa
+id_ecdsa
+identity
+*.ppk

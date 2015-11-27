@@ -1,0 +1,9 @@
+[install]
+if [[ ! -e ~/.rbenv ]]; then
+  git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+elif [[ $RENO_UPGRADE ]]; then
+  git -C ~/.rbenv pull
+fi
+
+[uninstall]
+rm -rf ~/.rbenv

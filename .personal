@@ -1,0 +1,6 @@
+NAME="Koichi Nakashima"
+EMAIL="koichi@nksm.name"
+
+if [ -f $HOME/.personal ]; then
+  . $HOME/.personal
+fi
