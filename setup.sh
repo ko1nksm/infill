@@ -1,25 +1,47 @@
 #!/usr/bin/env bash
 
-RENO_REPO="https://github.com/ko1nksm/reno.git"
-INSTALLER="https://raw.githubusercontent.com/ko1nksm/reno/master/install.sh"
-INFILL_REPO="git@github.com:ko1nksm/infill.git"
-INFILL_ARCHIVE="https://github.com/ko1nksm/infill/archive/master.tar.gz"
+set -eu
 
-RENO_DIR="$HOME/.reno"
-INFILL_DIR="$HOME/.infill"
+INSTALL_DIR="$HOME/.reno"
+AUTO_INSTALL=
+AUTO_YES=
+
+# install via git
+REPOSITORY="https://github.com/ko1nksm/reno.git"
+INFILL_REPOSITORY="git@github.com:ko1nksm/infill.git"
+
+# install from archive
+INSTALLER="https://raw.githubusercontent.com/ko1nksm/reno/master/install.sh"
+INFILL_ARCHIVE="https://github.com/ko1nksm/infill/archive/master.zip"
+INFILL_ARCHIVE_FORMAT="auto"
+
+export RENO_YES=${AUTO_YES:-}
 
 if type git > /dev/null 2>&1; then
-  if [[ -e $RENO_DIR ]]; then
+  if [[ -e $INSTALL_DIR || -L $INSTALL_DIR ]]; then
     echo "Found reno directory. skipping reno installation."
   else
-    git clone $RENO_REPO $RENO_DIR
-    $RENO_DIR/install.sh
+    git clone "$REPOSITORY" "$INSTALL_DIR"
+    "$INSTALL_DIR/install.sh"
   fi
-  $RENO_DIR/bin/reno init $INFILL_REPO
+
+  if [[ $INFILL_REPOSITORY && $INFILL_REPOSITORY != "YOUR-INFILL-REPOSITORY" ]]; then
+    "$INSTALL_DIR/bin/reno" init "$INFILL_REPOSITORY"
+  fi
 else
-  echo -n "Git not found. Do you want to import from an archive? [y/N] "
-  read input
+  if [[ ! $INSTALLER ]]; then
+    echo "Git not found."
+    exit 1
+  fi
+
+  if [[ $AUTO_YES ]]; then
+    echo "Git not found. Import from archive."
+  else
+    echo -n "Git not found. Do you want to import from an archive? [y/N] "
+    read input
+  fi
   [[ $input = "y" || $input = "Y" ]] || exit 1
+
   if type curl > /dev/null 2>&1; then
     bash -c "$(curl -L $INSTALLER)"
   elif type wget > /dev/null 2>&1; then
@@ -28,5 +50,12 @@ else
     echo "Not found git, wget, curl. Aborting"
     exit 1
   fi
-  $RENO_DIR/bin/reno init $INFILL_ARCHIVE --type archive
+
+  if [[ $INFILL_ARCHIVE && $INFILL_ARCHIVE != "YOUR-INFILL-ARCHIVE" ]]; then
+    "$INSTALL_DIR/bin/reno" init "$INFILL_ARCHIVE" --type archive --format "$INFILL_ARCHIVE_FORMAT"
+  fi
+fi
+
+if [[ $AUTO_INSTALL ]]; then
+  "$INSTALL_DIR/bin/reno" install
 fi
