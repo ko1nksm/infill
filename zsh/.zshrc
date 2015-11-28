@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -d $HOME/.zshrc.d ]; then
+if [[ -d $HOME/.zshrc.d ]]; then
   for i in $HOME/.zshrc.d/*.sh; do
     . $i
   done
