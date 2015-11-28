@@ -2,6 +2,7 @@
 
 set -eu
 
+# ---------- Edit below here ----------
 INSTALL_DIR="$HOME/.reno"
 AUTO_INSTALL=
 AUTO_YES=
@@ -14,6 +15,8 @@ INFILL_REPOSITORY="git@github.com:ko1nksm/infill.git"
 INSTALLER="https://raw.githubusercontent.com/ko1nksm/reno/master/install.sh"
 INFILL_ARCHIVE="https://github.com/ko1nksm/infill/archive/master.zip"
 INFILL_ARCHIVE_FORMAT="auto"
+# ---------- Edit above here ----------
+
 
 export RENO_YES=${AUTO_YES:-}
 
