@@ -86,6 +86,7 @@ set shiftwidth=2
 set smarttab
 set whichwrap=b,s,h,l,<,>,[,]
 set cursorline
+set backspace=indent,eol,start
 
 syntax on
 set t_Co=256
