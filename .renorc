@@ -2,4 +2,6 @@ case $(uname -a) in
   *Cygwin*)  INFILL_DEFAULT=cygwin ;;
   *Msys*)    INFILL_DEFAULT=cygwin ;;
   *OpenWrt*) INFILL_DEFAULT=openwrt ;;
+  *Darwin*)  INFILL_DEFAULT=macosx ;;
+  *Linux*)   INFILL_DEFAULT=linux ;;
 esac

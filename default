@@ -1,2 +1,6 @@
-common
-shell
+misc
+zsh
+bash
+git
+neobundle
+tools
