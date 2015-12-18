@@ -4,8 +4,8 @@ set -eu
 
 # ---------- Edit below here ----------
 INSTALL_DIR="$HOME/.reno"
-AUTO_INSTALL=
-AUTO_YES=
+AUTO_INSTALL=${AUTO_INSTALL:-}
+AUTO_YES=${AUTO_YES:-}
 
 # install via git
 REPOSITORY="https://github.com/ko1nksm/reno.git"
