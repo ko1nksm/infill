@@ -1,0 +1,8 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+SETUP = <<DATA
+ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+bash -c "AUTO_INSTALL=1 AUTO_YES=1; $(curl -L https://github.com/ko1nksm/infill/raw/master/setup.sh)"
+DATA
+

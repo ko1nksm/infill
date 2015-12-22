@@ -1,0 +1,7 @@
+[install:before]
+case $(uname -a) in
+  *[[:space:]]Msys* | *[[:space:]]Cygwin*)
+    if [[ ! -d $HOME/.vagrant.d ]]; then
+      ln -s "$USERPROFILE/.vagrant.d" "$HOME/.vagrant.d"
+    fi
+esac
