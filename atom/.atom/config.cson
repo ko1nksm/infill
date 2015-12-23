@@ -1,6 +1,12 @@
 "*":
+  core: {}
   editor:
-    fontSize: 11
+    fontFamily: "\"IPAゴシック\""
+    fontSize: 12
+    invisibles:
+      eol: " "
+    lineHeight: 1.2
+    showInvisibles: true
   "exception-reporting":
     userId: "aa9ebdd0-9e50-1a98-28de-4ab5a3043845"
   welcome:
