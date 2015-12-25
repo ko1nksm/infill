@@ -1,5 +1,8 @@
 "*":
-  core: {}
+  core:
+    disabledPackages: [
+      "wrap-guide"
+    ]
   editor:
     fontFamily: "\"IPAゴシック\""
     fontSize: 12
@@ -11,3 +14,9 @@
     userId: "aa9ebdd0-9e50-1a98-28de-4ab5a3043845"
   welcome:
     showOnStartup: false
+  "multi-wrap-guide":
+    columns: [
+      80
+      100
+      120
+    ]
