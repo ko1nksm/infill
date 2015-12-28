@@ -5,3 +5,5 @@ packages
 blob-store
 .npm
 .node-gyp
+.apm
+
