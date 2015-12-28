@@ -1,0 +1,12 @@
+packages: [
+  "editorconfig"
+  "file-icons"
+  "highlight-selected"
+  "japanese-menu"
+  "multi-wrap-guide"
+  "package-sync"
+  "pigments"
+  "project-manager"
+  "show-ideographic-space"
+  "trailing-spaces"
+]
