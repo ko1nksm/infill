@@ -1,0 +1,6 @@
+dns:
+  title: "dns"
+  paths: [
+    "\\\\dns.local\\koichi\\frontend"
+    "\\\\dns.local\\koichi\\dockerfiles\\ko1nksm\\devdns"
+  ]
