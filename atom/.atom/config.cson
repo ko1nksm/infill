@@ -12,6 +12,9 @@
     showInvisibles: true
   "exception-reporting":
     userId: "aa9ebdd0-9e50-1a98-28de-4ab5a3043845"
+  minimap:
+    plugins:
+      "highlight-selected": true
   "multi-wrap-guide":
     columns: [
       80
