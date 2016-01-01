@@ -1,4 +1,5 @@
 packages: [
+  "color-picker"
   "editorconfig"
   "file-icons"
   "highlight-selected"
