@@ -22,5 +22,8 @@
       120
     ]
     locked: true
+  tabs:
+    enableVcsColoring: true
+    usePreviewTabs: true
   welcome:
     showOnStartup: false
