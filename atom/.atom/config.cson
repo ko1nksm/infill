@@ -2,6 +2,7 @@
   core:
     disabledPackages: [
       "wrap-guide"
+      "spell-check"
     ]
   editor:
     fontFamily: "\"Migu 1M\""
@@ -22,6 +23,7 @@
       120
     ]
     locked: true
+  "spell-check": {}
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
