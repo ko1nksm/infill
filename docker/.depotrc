@@ -1,3 +1,5 @@
 DOCKERFILES=${DOCKERFILES:-$HOME/dockerfiles}
-DOCKER_BUILD_OPTION="--build-arg http_proxy=http://cache:3142 --build-arg no_proxy=ftp.gnu.org"
+if nc -z cache 3142 &> /dev/null; then
+  DOCKER_BUILD_OPTION="--build-arg http_proxy=http://cache:3142 --build-arg no_proxy=ftp.gnu.org"
+fi
 
