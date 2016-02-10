@@ -1,3 +1,3 @@
 DOCKERFILES=${DOCKERFILES:-$HOME/dockerfiles}
-DOCKER_BUILD_OPTION="--build-arg http_proxy=http://guardian.home:3142 --build-arg no_proxy=ftp.gnu.org"
+DOCKER_BUILD_OPTION="--build-arg http_proxy=http://cache:3142 --build-arg no_proxy=ftp.gnu.org"
 
