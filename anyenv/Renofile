@@ -5,5 +5,12 @@ elif [[ $RENO_UPGRADE ]]; then
   git -C ~/.anyenv pull
 fi
 
+if [[ ! -e ~/.anyenv/plugins/anyenv-update ]]; then
+  mkdir -p ~/.anyenv/plugins
+  git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+elif [[ $RENO_UPGRADE ]]; then
+  git -C ~/.anyenv/plugins/anyenv-update pull
+fi
+
 [uninstall]
 rm -rf ~/.anyenv
