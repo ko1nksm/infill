@@ -5,6 +5,7 @@
       "spell-check"
     ]
   editor:
+    autoIndentOnPaste: false
     fontFamily: "\"Migu 1M\""
     fontSize: 11
     invisibles:
