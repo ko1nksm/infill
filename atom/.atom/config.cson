@@ -29,7 +29,8 @@
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
