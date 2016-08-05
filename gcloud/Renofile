@@ -1,0 +1,10 @@
+[install]
+if [[ "$INFILL_DEFAULT" = "osx" ]]; then
+  if [[ ! -x $HOME/opt/google-cloud-sdk ]]; then
+    curl https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-120.0.0-darwin-x86_64.tar.gz | tar zx -C $HOME/opt
+    $HOME/opt/google-cloud-sdk/install.sh --usage-reporting false --path-update false --command-completion false
+  fi
+fi
+
+[uninstall]
+rm -rf $HOME/opt/google-cloud-sdk
