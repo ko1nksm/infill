@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ "$(git config --get --bool hooks.user-info-checked)" != "true" ]; then
+  echo "This is first commit. Verify your name and email."
+  echo "name  = $(git config --get user.name)"
+  echo "email = $(git config --get user.email)"
+  echo "Ctrl-C to abort."
+  read anaswer < /dev/tty
+  git config --bool hooks.user-info-checked true
+fi
+
