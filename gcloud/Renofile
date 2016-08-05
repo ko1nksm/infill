@@ -4,7 +4,11 @@ if [[ "$INFILL_DEFAULT" = "osx" ]]; then
     curl https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-120.0.0-darwin-x86_64.tar.gz | tar zx -C $HOME/opt
     $HOME/opt/google-cloud-sdk/install.sh --usage-reporting false --path-update false --command-completion false
   fi
+
+  wget https://github.com/minimum2scp/geco/releases/download/2.0.5/geco_darwin_amd64.zip -O /tmp/geco_darwin_amd64.zip
+  unzip -j /tmp/geco_darwin_amd64.zip -d $HOME/bin
 fi
 
 [uninstall]
 rm -rf $HOME/opt/google-cloud-sdk
+rm -rf $HOME/bin/geco
