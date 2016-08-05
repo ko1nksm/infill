@@ -1,0 +1,5 @@
+[install]
+if [[ "$INFILL_DEFAULT" = "osx" ]]; then
+  defaults write com.apple.finder AppleShowAllFiles -boolean true
+  defaults write -g AppleShowAllFiles -bool true
+fi
