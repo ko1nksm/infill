@@ -8,9 +8,8 @@ if [[ ! -e ~/.anyenv/plugins/anyenv-update ]]; then
   git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
 fi
 
-if [[ $RENO_UPGRADE ]]; then
-  anyenv update
-fi
+[update]
+anyenv update
 
 [uninstall]
 rm -rf ~/.anyenv

@@ -1,12 +1,13 @@
 [install]
 if [[ ! -e ~/usr/src/bats ]]; then
   git clone https://github.com/sstephenson/bats.git ~/usr/src/bats
-elif [[ $RENO_UPGRADE ]]; then
-  git -C ~/usr/src/bats pull
 fi
 
 cd ~/usr/src/bats
 ./install.sh ~/opt/bats
+
+[update]
+git -C ~/usr/src/bats pull
 
 [uninstall]
 rm -rf ~/usr/src/bats

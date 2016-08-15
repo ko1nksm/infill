@@ -1,10 +1,11 @@
 [install]
 if [[ ! -e ~/docker-depot ]]; then
   git clone git@github.com:ko1nksm/docker-depot.git ~/docker-depot
-elif [[ $RENO_UPGRADE ]]; then
-  git -C ~/docker-depot pull
 fi
 ln -snf ../docker-depot/docker-depot ~/bin/docker-depot
+
+[update]
+git -C ~/docker-depot pull
 
 [uninstall]
 rm -rf ~/docker-depot
