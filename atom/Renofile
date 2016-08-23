@@ -1,7 +1,6 @@
 [install]
-apm install --packages-file packages.txt
+./apm-sync packages.txt
 
 [update]
-apm update -c false
-apm list --installed --bare > packages.txt
+./apm-sync packages.txt
 

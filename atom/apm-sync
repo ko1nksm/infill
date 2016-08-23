@@ -1,0 +1,16 @@
+#!/bin/bash
+
+APM_PATH=${APM_PATH:-apm}
+
+installed=$($APM_PATH list --installed --bare | sed "s/@.*//" | sort)
+packages=$(sed "s/@.*//" $1 | sort)
+
+diff=$(diff -u <(echo "$installed") <(echo "$packages"))
+
+tmpfile=$(mktemp)
+echo "$diff"  | tail -n +4 | grep -E "^\+" | cut -c 2- > "$tmpfile"
+$APM_PATH install --packages-file "$tmpfile"
+rm "$tmpfile"
+
+$APM_PATH update -c false
+$APM_PATH list --installed --bare > $1
