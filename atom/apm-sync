@@ -8,7 +8,7 @@ packages=$(sed "s/@.*//" $1 | sort)
 diff=$(diff -u <(echo "$installed") <(echo "$packages"))
 
 tmpfile=$(mktemp)
-echo "$diff"  | tail -n +4 | grep -E "^\+" | cut -c 2- > "$tmpfile"
+echo "$diff" | tail -n +4 | grep -E "^\+" | cut -c 2- > "$tmpfile"
 $APM_PATH install --packages-file "$tmpfile"
 rm "$tmpfile"
 
