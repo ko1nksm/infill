@@ -11,9 +11,8 @@ minimap@4.24.7
 minimap-highlight-selected@4.4.0
 multi-wrap-guide@0.25.2
 open-in-browser@0.4.7
-pigments@0.32.1
+pigments@0.33.0
 project-manager@2.9.7
-react@0.16.0
 show-ideographic-space@1.0.1
 trailing-spaces@0.3.2
 
