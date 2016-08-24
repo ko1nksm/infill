@@ -4,6 +4,7 @@ editorconfig@1.4.1
 file-icons@1.7.18
 highlight-selected@0.11.2
 japanese-menu@1.8.0
+language-json-comments@0.16.3
 linter@1.11.16
 linter-eslint@7.2.4
 minimap@4.24.7
