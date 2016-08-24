@@ -1,6 +1,16 @@
 [install]
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if ! type brew > /dev/null 2>&1; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+[update]
+if type brew > /dev/null 2>&1; then
+  brew update
+  brew upgrade
+fi
 
 [uninstall]
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)" 
+if type brew > /dev/null 2>&1; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+fi
 
