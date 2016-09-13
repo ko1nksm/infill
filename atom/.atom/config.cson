@@ -7,13 +7,16 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "\"Migu 1M\""
-    fontSize: 11
+    fontSize: 10
     invisibles:
       eol: " "
     lineHeight: 1.2
     showInvisibles: true
   "exception-reporting":
     userId: "aa9ebdd0-9e50-1a98-28de-4ab5a3043845"
+  linter:
+    errorPanelHeight: 84
+  "linter-eslint": {}
   minimap:
     plugins:
       "highlight-selected": true
