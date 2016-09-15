@@ -7,7 +7,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "\"Migu 1M\""
-    fontSize: 10
+    fontSize: 11
     invisibles:
       eol: " "
     lineHeight: 1.2
