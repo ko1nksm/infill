@@ -17,3 +17,6 @@
 [init]
     templatedir = ~/.gittemplate
 
+[log]
+	decorate = true
+	date = format:%F %T %z (%a)
