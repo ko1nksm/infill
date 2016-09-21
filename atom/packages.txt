@@ -7,7 +7,7 @@ japanese-menu@1.8.0
 language-babel@2.41.0
 language-json-comments@0.16.3
 linter@1.11.16
-linter-eslint
+linter-eslint@7.3.2
 minimap@4.25.0
 minimap-highlight-selected@4.4.0
 multi-wrap-guide@0.25.2
