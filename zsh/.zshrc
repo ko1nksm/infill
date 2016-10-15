@@ -91,8 +91,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 if [[ -d $HOME/.zshrc.d ]]; then
-  for i in $HOME/.zshrc.d/*.sh; do
+  for i in $HOME/.zshrc.d/[a-z]*.sh; do
     . $i
   done
   unset i
+fi
+
+if [[ -f $HOME/.zshrc.d/_$(ostype).sh ]]; then
+  . $HOME/.zshrc.d/_$(ostype).sh
 fi
