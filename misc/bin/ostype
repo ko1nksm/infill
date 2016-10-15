@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case $(uname -a) in
+  *Cygwin*)  echo cygwin ;;
+  *Msys*)    echo msys ;;
+  *OpenWrt*) echo openwrt ;;
+  *Darwin*)  echo macos ;;
+  *Linux*)   echo linux ;;
+  *)         echo unknown ;;
+esac
