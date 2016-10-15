@@ -1,3 +1,4 @@
 # for cygwin / msys
 default
 mintty
+ssh-pageant
