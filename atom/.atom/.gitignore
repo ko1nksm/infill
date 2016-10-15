@@ -6,4 +6,4 @@ blob-store
 .npm
 .node-gyp
 .apm
-
+/recovery
