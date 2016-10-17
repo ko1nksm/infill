@@ -4,6 +4,7 @@
       "wrap-guide"
       "spell-check"
     ]
+    telemetryConsent: "no"
   editor:
     autoIndentOnPaste: false
     fontFamily: "\"Migu 1M\""
