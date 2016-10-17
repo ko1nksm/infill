@@ -5,3 +5,6 @@ case $(uname -a) in
   *Darwin*)  INFILL_DEFAULT=osx ;;
   *Linux*)   INFILL_DEFAULT=linux ;;
 esac
+
+INFILL_HIDE_NAME=iterm2
+
