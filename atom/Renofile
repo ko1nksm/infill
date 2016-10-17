@@ -3,7 +3,7 @@ case $(uname -a) in
   *Cygwin*) export APM_PATH=apm.cmd ;;
 esac
 
-[install]
+[install:after]
 ./apm-sync packages.txt
 
 [update]
