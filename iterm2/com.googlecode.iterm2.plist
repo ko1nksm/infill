@@ -87,7 +87,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.infill</string>
+	<string>~/.infill/iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -129,7 +129,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 490 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 135 796 473 0 0 1680 1027 </string>
+	<string>440 295 796 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>530 185 1060 667 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -937,7 +937,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/koichi/.infill</string>
+	<string>/Users/koichi/.infill/iterm2</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
