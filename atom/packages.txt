@@ -9,7 +9,7 @@ language-json-comments@0.16.3
 linter@1.11.18
 linter-eslint@8.0.0
 markdown-preview-plus@2.4.0
-minimap@4.25.5
+minimap@4.25.6
 minimap-highlight-selected@4.4.0
 multi-wrap-guide@0.25.2
 open-in-browser@0.4.7
