@@ -5,3 +5,4 @@
 *.gitignore.*
 .documents
 .private
+npm-debug.log
