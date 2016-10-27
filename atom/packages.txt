@@ -1,7 +1,7 @@
 browser-plus@0.0.76
 color-picker@2.2.2
-editorconfig@1.5.3
-file-icons@1.7.22
+editorconfig@1.7.0
+file-icons@1.7.23
 highlight-selected@0.11.2
 japanese-menu@1.8.0
 language-babel@2.45.0
@@ -14,7 +14,7 @@ minimap-highlight-selected@4.4.0
 multi-wrap-guide@0.25.2
 open-in-browser@0.4.7
 pigments@0.37.0
-project-manager@3.2.5
+project-manager@3.3.2
 show-ideographic-space@1.0.1
 trailing-spaces@0.3.2
 
