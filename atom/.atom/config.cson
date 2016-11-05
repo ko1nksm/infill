@@ -1,8 +1,11 @@
 "*":
+  "autocomplete-ruby":
+    rsensePath: "~/.anyenv/envs/rbenv/shims/rsense"
   core:
     disabledPackages: [
       "wrap-guide"
       "spell-check"
+      "autocomplete-go"
     ]
     telemetryConsent: "no"
   editor:
