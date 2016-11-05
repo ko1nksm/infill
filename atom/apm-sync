@@ -5,7 +5,9 @@ APM_PATH=${APM_PATH:-apm}
 installed=$($APM_PATH list --installed --bare | sed "s/@.*//" | sort)
 packages=$(sed "s/@.*//" $1 | sort)
 
+set +e
 diff=$(diff -u <(echo "$installed") <(echo "$packages"))
+set -e
 
 while read line; do
   $APM_PATH install $line
