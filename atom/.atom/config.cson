@@ -19,6 +19,7 @@
     showInvisibles: true
   "exception-reporting":
     userId: "aa9ebdd0-9e50-1a98-28de-4ab5a3043845"
+  "highlight-selected": {}
   linter:
     errorPanelHeight: 84
   "linter-eslint": {}
