@@ -1,6 +1,7 @@
 atom-runner@2.7.1
 autocomplete-go@1.3.0
 autocomplete-json@5.1.0
+autocomplete-paths@1.0.2
 autocomplete-python@1.8.11
 autocomplete-ruby@0.2.1
 browser-plus@0.0.76
@@ -34,10 +35,12 @@ minimap@4.25.6
 minimap-highlight-selected@4.4.0
 multi-wrap-guide@0.25.2
 open-in-browser@0.4.7
+open-recent@5.0.0
 open-unsupported-files@1.0.19
 pigments@0.37.0
-project-manager@3.3.3
+pretty-json@1.6.1
 prompt-big-file@0.3.0
+recent-projects@0.13.0
 regex-railroad-diagram@0.16.0
 rubocop-auto-correct@1.5.1
 show-ideographic-space@1.0.1
@@ -46,5 +49,4 @@ tablr@1.5.5
 trailing-spaces@0.3.2
 tree-view-git-branch@0.1.2
 tree-view-git-status@1.2.0
-
 
