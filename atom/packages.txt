@@ -23,6 +23,7 @@ multi-wrap-guide@0.25.2
 open-in-browser@0.4.7
 pigments@0.37.0
 project-manager@3.3.3
+rubocop-auto-correct@1.5.1
 show-ideographic-space@1.0.1
 trailing-spaces@0.3.2
 
