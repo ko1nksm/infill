@@ -1,6 +1,6 @@
 "*":
   "autocomplete-ruby":
-    rsensePath: "~/.anyenv/envs/rbenv/shims/rsense"
+    rsensePath: "rsense"
   core:
     disabledPackages: [
       "wrap-guide"
