@@ -1,3 +1,4 @@
+Sublime-Style-Column-Selection@1.7.2
 atom-runner@2.7.1
 autoclose-html@0.23.0
 autocomplete-go@1.3.0
@@ -19,7 +20,7 @@ go-get@2.1.1
 hex@0.6.2
 highlight-selected@0.11.2
 japanese-menu@1.8.0
-language-babel@2.46.0
+language-babel@2.47.0
 language-json-comments@0.16.3
 linter@1.11.18
 linter-erb@1.0.2
@@ -28,7 +29,7 @@ linter-js-yaml@1.2.5
 linter-pep8@1.3.2
 linter-rubocop@0.5.0
 linter-ruby@1.2.2
-linter-sass-lint@1.7.1
+linter-sass-lint@1.7.2
 linter-tidy@2.2.1
 local-history@3.4.1
 markdown-preview-plus@2.4.0
@@ -43,6 +44,7 @@ open-recent@5.0.0
 open-unsupported-files@1.0.19
 pigments@0.37.0
 pretty-json@1.6.1
+project-manager@3.3.3
 prompt-big-file@0.3.0
 rails-snippets@2.8.0
 rails-transporter@1.6.5
@@ -52,7 +54,6 @@ rubocop-auto-correct@1.5.1
 ruby-block@0.3.5
 script@3.11.1
 show-ideographic-space@1.0.1
-Sublime-Style-Column-Selection@1.7.2
 symbols-tree-view@0.13.2
 tablr@1.5.5
 trailing-spaces@0.3.2
