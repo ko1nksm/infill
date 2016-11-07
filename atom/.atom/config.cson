@@ -22,6 +22,8 @@
   "highlight-selected": {}
   linter:
     errorPanelHeight: 84
+  "linter-erb":
+    trimMode: "-"
   "linter-eslint": {}
   minimap:
     autoToggle: false
