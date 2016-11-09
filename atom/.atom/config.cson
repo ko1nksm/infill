@@ -21,7 +21,7 @@
     userId: "aa9ebdd0-9e50-1a98-28de-4ab5a3043845"
   "highlight-selected": {}
   linter:
-    errorPanelHeight: 84
+    errorPanelHeight: 24
   "linter-erb":
     trimMode: "-"
   "linter-eslint": {}
