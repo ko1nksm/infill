@@ -1,3 +1,5 @@
 /.atom/
 /packages.txt
 /apm-sync
+/.gitignore
+
