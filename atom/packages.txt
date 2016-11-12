@@ -6,10 +6,10 @@ autocomplete-json@5.1.0
 autocomplete-paths@1.0.2
 autocomplete-python@1.8.11
 autocomplete-ruby@0.2.2
-browser-plus@0.0.76
+browser-plus@0.0.83
 color-picker@2.2.2
 editorconfig@2.0.5
-file-icons@1.7.24
+file-icons@1.7.25
 git-log@0.4.1
 git-plus@5.25.1
 git-status@0.3.4
@@ -18,7 +18,7 @@ go-config@1.2.4
 go-get@2.1.1
 hex@0.6.2
 highlight-selected@0.11.2
-japanese-menu@1.8.0
+japanese-menu@1.9.0
 language-babel@2.48.3
 language-json-comments@0.16.3
 linter@1.11.18
@@ -45,7 +45,7 @@ pigments@0.37.0
 pretty-json@1.6.1
 project-manager@3.3.3
 prompt-big-file@0.3.0
-rails-snippets@2.9.0
+rails-snippets@2.10.1
 rails-transporter@1.6.5
 recent-projects@0.13.0
 regex-railroad-diagram@0.16.0
