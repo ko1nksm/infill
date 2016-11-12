@@ -7,3 +7,6 @@ blob-store
 .node-gyp
 .apm
 /recovery
+
+/local-history
+
