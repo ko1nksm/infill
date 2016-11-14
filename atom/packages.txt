@@ -38,7 +38,7 @@ markdown-toc@0.4.1
 merge-conflicts@1.4.4
 minimap@4.25.6
 minimap-highlight-selected@4.4.0
-multi-wrap-guide@0.25.2
+multi-wrap-guide@0.26.1
 open-in-browser@0.4.7
 open-recent@5.0.0
 open-unsupported-files@1.0.19
