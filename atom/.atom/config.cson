@@ -1,4 +1,6 @@
 "*":
+  "autocomplete-python":
+    useKite: false
   "autocomplete-ruby":
     rsensePath: "rsense"
   core:
@@ -21,10 +23,11 @@
     userId: "aa9ebdd0-9e50-1a98-28de-4ab5a3043845"
   "highlight-selected": {}
   linter:
-    errorPanelHeight: 24
+    errorPanelHeight: 119
   "linter-erb":
     trimMode: "-"
   "linter-eslint": {}
+  "linter-ruby": {}
   minimap:
     autoToggle: false
     plugins:

@@ -4,14 +4,14 @@ autoclose-html@0.23.0
 autocomplete-html-entities@0.1.0
 autocomplete-json@5.2.0
 autocomplete-paths@1.0.5
-autocomplete-python@1.8.20
+autocomplete-python@1.8.23
 autocomplete-ruby@0.2.3
 browser-plus@0.0.87
 color-picker@2.2.3
 editorconfig@2.0.5
 file-icons@1.7.25
 git-log@0.4.1
-git-plus@5.29.0
+git-plus@6.0.2
 git-status@0.3.4
 git-time-machine@1.5.4
 hex@0.6.2
@@ -30,7 +30,7 @@ linter-sass-lint@1.7.4
 linter-tidy@2.3.0
 local-history@3.4.1
 markdown-preview-plus@2.4.0
-markdown-table-formatter@2.8.3
+markdown-table-formatter@2.8.4
 markdown-toc@0.4.1
 merge-conflicts@1.4.4
 minimap@4.25.7
@@ -49,7 +49,7 @@ recent-projects@0.13.1
 regex-railroad-diagram@0.16.0
 rubocop-auto-correct@1.5.1
 ruby-block@0.3.5
-script@3.12.2
+script@3.13.0
 show-ideographic-space@1.0.1
 symbols-tree-view@0.13.2
 tablr@1.8.0
