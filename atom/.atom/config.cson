@@ -7,7 +7,6 @@
     disabledPackages: [
       "wrap-guide"
       "spell-check"
-      "autocomplete-go"
       "notifications"
     ]
     telemetryConsent: "no"
