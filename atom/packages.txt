@@ -9,9 +9,9 @@ autocomplete-ruby@0.2.4
 browser-plus@0.0.87
 color-picker@2.2.3
 editorconfig@2.0.5
-file-icons@2.0.4
+file-icons@2.0.7
 git-log@0.4.1
-git-plus@7.0.4
+git-plus@7.0.5
 git-status@0.3.4
 git-time-machine@1.5.4
 hex@0.6.2
@@ -52,7 +52,7 @@ ruby-block@0.3.5
 script@3.13.0
 show-ideographic-space@1.0.1
 symbols-tree-view@0.13.2
-tablr@1.8.0
+tablr@1.8.1
 trailing-spaces@0.3.2
 tree-view-git-branch@0.1.2
 tree-view-git-status@1.3.0
