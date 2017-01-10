@@ -1,9 +1,8 @@
 AllCops:
   TargetRubyVersion: 2.3
-  Exclude:
-    - '**/Rakefile'
-    - '**/Gemfile'
-    - '**/Capfile'
+
+LineLength:
+  Max: 150
 
 Rails:
   Enabled: true
@@ -11,6 +10,10 @@ Rails:
 Style/AsciiComments:
   Enabled: false
 
-LineLength:
-  Max: 150
+Style/VariableNumber:
+  Enabled: false
+
+ParameterLists:
+  Max: 10
+  CountKeywordArgs: false
 
