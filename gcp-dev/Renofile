@@ -1,10 +1,12 @@
 [install]
+version=145.0.0
 [[ "$INFILL_DEFAULT" = "osx" ]] && platform=darwin
 [[ "$INFILL_DEFAULT" = "linux" ]] && platform=linux
 
 if [[ "$platform" && ! -e $HOME/opt/google-cloud-sdk  ]]; then
   mkdir -p $HOME/opt
-  curl https://sdk.cloud.google.com | bash -s -- install-dir=$HOME/opt
+  curl https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${version}-${platform}-x86_64.tar.gz | tar zx -C $HOME/opt
+  $HOME/opt/google-cloud-sdk/install.sh --usage-reporting false --path-update false --command-completion false
 fi
 
 if [[ ! -e $HOME/bin/geco  ]]; then
