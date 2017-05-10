@@ -1,0 +1,19 @@
+[env]
+
+[install]
+if [[ ! -e $GOPATH/src/github.com/golang/lint ]]; then
+  go get -u github.com/golang/lint/golint
+fi
+
+if [[ ! -e $GOPATH/bin/glide ]]; then
+  curl https://glide.sh/get | sh
+fi
+
+[update]
+go get -u github.com/golang/lint/golint
+curl https://glide.sh/get | sh
+
+[uninstall]
+rm -rf $GOPATH/src/github.com/golang/lint
+rm -rf $GOPATH/bin/glide
+
