@@ -23,12 +23,6 @@ fi
 [update]
 gcloud components update
 
-wget https://storage.googleapis.com/appengine-sdks/featured/go_appengine_sdk_${platform}_amd64-${go_appengine_sdk_version}.zip -O /tmp/go_appengine_sdk.zip
-unzip /tmp/go_appengine_sdk.zip -d $HOME/opt
-
-wget https://github.com/minimum2scp/geco/releases/download/2.0.5/geco_${platform}_amd64.zip -O /tmp/geco.zip
-unzip -j /tmp/geco.zip -d $HOME/bin
-
 [uninstall]
 if [[ -e $HOME/opt/google-cloud-sdk ]]; then
   rm -rf $HOME/opt/google-cloud-sdk

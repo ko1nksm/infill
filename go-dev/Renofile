@@ -10,8 +10,6 @@ if [[ ! -e $GOPATH/bin/glide ]]; then
 fi
 
 [update]
-go get -u github.com/golang/lint/golint
-curl https://glide.sh/get | sh
 
 [uninstall]
 rm -rf $GOPATH/src/github.com/golang/lint
