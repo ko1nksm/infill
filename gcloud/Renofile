@@ -1,0 +1,15 @@
+[install]
+if [[ ! -e $HOME/opt/google-cloud-sdk  ]]; then
+  mkdir -p $HOME/opt
+  curl https://sdk.cloud.google.com | bash -s -- --install-dir=$HOME/opt --disable-prompts
+  gcloud components install app-engine-go --quiet
+fi
+
+[update]
+gcloud components update --quiet
+
+[uninstall]
+if [[ -e $HOME/opt/google-cloud-sdk ]]; then
+  rm -rf $HOME/opt/google-cloud-sdk
+fi
+

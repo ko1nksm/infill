@@ -1,0 +1,20 @@
+[env]
+if [[ "$INFILL_DEFAULT" = "osx" ]]; then
+  platform=darwin
+fi
+if [[ "$INFILL_DEFAULT" = "linux" ]]; then
+  platform=linux
+fi
+
+[install]
+if [[ ! -e $HOME/bin/geco  ]]; then
+  wget https://github.com/minimum2scp/geco/releases/download/2.0.5/geco_${platform}_amd64.zip -O /tmp/geco.zip
+  unzip -j /tmp/geco.zip -d $HOME/bin
+fi
+
+[update]
+
+[uninstall]
+if [[ -e $HOME/bin/geco ]]; then
+  rm -rf $HOME/bin/geco
+fi

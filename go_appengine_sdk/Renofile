@@ -1,0 +1,18 @@
+[env]
+[[ "$INFILL_DEFAULT" = "osx" ]] && platform=darwin
+[[ "$INFILL_DEFAULT" = "linux" ]] && platform=linux
+go_appengine_sdk_version=1.9.55
+
+[install]
+if [[ ! -e "$HOME/opt/go_appengine" ]]; then
+  wget https://storage.googleapis.com/appengine-sdks/featured/go_appengine_sdk_${platform}_amd64-${go_appengine_sdk_version}.zip -O /tmp/go_appengine_sdk.zip
+  unzip /tmp/go_appengine_sdk.zip -d $HOME/opt
+fi
+
+[update]
+
+[uninstall]
+if [[ -e "$HOME/opt/go_appengine" ]]; then
+  rm -rf "$HOME/opt/go_appengine"
+fi
+
